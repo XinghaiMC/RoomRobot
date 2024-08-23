@@ -1,0 +1,3 @@
+name: RoomRobot
+version: '${project.version}'
+main: org.xinghaimc.roomrobot.Main

@@ -38,7 +38,7 @@ public final class Main extends JavaPlugin {
         // 从配置文件中读取SleepTime
         int SleepTime = Config.getInt("SleepTime")*20;
 
-        Bukkit.getScheduler().runTaskLater(this, new Clean(), SleepTime);
+        new Clean().runTaskTimer(this, SleepTime, SleepTime);
         getLogger().info("扫地机器人插件加载完成！");
     }
 

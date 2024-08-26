@@ -58,7 +58,8 @@ public final class Main extends JavaPlugin {
         public void run() {
             CommandSender console = Bukkit.getConsoleSender();
             Bukkit.getServer().dispatchCommand(console, "kill @e[type=minecraft:item]");
-            Bukkit.broadcastMessage("扫地机器人正在全力清扫...");
+            String prefix = Config.getString("Prefix");
+            Bukkit.broadcastMessage(prefix+"扫地机器人正在全力清扫...");
         }
     }
 }

@@ -7,4 +7,6 @@
 SleepTime: 360
 # 消息前缀
 Prefix: "扫地机器人 >>"
+# 清理提示是否开启
+Message: true
 ```
